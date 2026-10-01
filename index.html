@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GACN · 开发者主页</title>
+<meta name="description" content="GACN 的个人开发主页：Android 自动化、AI Agent 工具链、跨端 App 与数据大屏开发。">
+<style>
+:root{
+  --navy:#082D59; --navy-deep:#061f3f; --gold:#C79943; --orange:#FF6B35;
+  --bg:#f5f7fb; --card:#ffffff; --ink:#172033; --muted:#5b6675; --line:#e4e9f2;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Roboto,"Helvetica Neue",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+a{color:var(--navy)}
+header{background:linear-gradient(135deg,var(--navy-deep),var(--navy) 60%,#0d3d76);color:#fff;padding:64px 24px 56px;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;border:40px solid rgba(255,107,53,.18);border-radius:50%}
+.wrap{max-width:1040px;margin:0 auto;position:relative;z-index:1}
+.eyebrow{display:inline-block;font-size:13px;letter-spacing:.18em;color:var(--gold);border:1px solid rgba(199,153,67,.5);padding:4px 12px;border-radius:999px;margin-bottom:18px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.5px}
+h1 em{font-style:normal;color:var(--orange)}
+.sub{margin-top:14px;max-width:640px;color:#cdd9ec;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);padding:5px 12px;border-radius:999px;font-size:13px;color:#e8eefb}
+main{padding:40px 24px 64px}
+h2{font-size:20px;margin:36px 0 6px;font-weight:800}
+h2 span{display:block;font-size:12px;letter-spacing:.2em;color:var(--muted);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 1px 3px rgba(8,45,89,.06);transition:transform .18s,box-shadow .18s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(8,45,89,.12)}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--orange);background:rgba(255,107,53,.1);border-radius:6px;padding:3px 8px;margin-bottom:10px}
+.card h3{font-size:17px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted)}
+.meta{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
+.meta i{font-style:normal;font-size:12px;color:var(--navy);background:#eef3fb;border-radius:6px;padding:3px 8px}
+ul.skills{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:16px}
+ul.skills li{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:10px 14px;font-size:14px}
+.contact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-top:18px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:11px 20px;border-radius:10px;font-weight:700;font-size:14px}
+.btn.alt{background:var(--orange)}
+footer{padding:22px 24px 40px;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="eyebrow">GITHUB · GACN</span>
+    <h1>你好，我是 <em>GACN</em><br>我写代码，也搭工具链。</h1>
+    <p class="sub">开发者，方向是 Android 自动化、AI Agent 工具链、跨端 App 与数据可视化大屏。这个页面是我公开项目的索引，全部是自己写、自己部署的工程实践。</p>
+    <div class="chips">
+      <span class="chip">Android / Termux 自动化</span>
+      <span class="chip">React Native · Expo</span>
+      <span class="chip">AI Agent 与技能库</span>
+      <span class="chip">Cloudflare Workers</span>
+      <span class="chip">Vue · 数据大屏</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2><span>PROJECTS</span>项目</h2>
+  <div class="grid">
+    <div class="card">
+      <span class="tag">MOBILE APP</span>
+      <h3>跨端移动应用（Expo + Supabase）</h3>
+      <p>Expo 55 / React Native 0.83 + expo-router + Supabase 的完整工程：路由、鉴权、数据层，配 GitHub Actions 云构建出 APK。</p>
+      <div class="meta"><i>React Native</i><i>Expo</i><i>Supabase</i><i>CI/CD</i></div>
+    </div>
+    <div class="card">
+      <span class="tag">AI AGENT</span>
+      <h3>个人 Agent 技能库</h3>
+      <p>把重复工作沉淀成可复用的自动化技能（Skills）：定时任务、日志巡检、批量内容处理，带索引与版本管理。</p>
+      <div class="meta"><i>Python</i><i>Cron</i><i>Skill 系统</i></div>
+    </div>
+    <div class="card">
+      <span class="tag">ANDROID</span>
+      <h3>Android 逆向与自动化工具链</h3>
+      <p>基于 apktool 的 dex 级补丁流程、aapt2 资源兼容修复、无 Gradle 环境下的本地 APK 构建脚本。</p>
+      <div class="meta"><i>apktool</i><i>smali</i><i>Bash</i></div>
+    </div>
+    <div class="card">
+      <span class="tag">MEDIA</span>
+      <h3>图像 / 视频处理管线</h3>
+      <p>FFmpeg 视频合成、抽帧质检、基于 onnxruntime 的姿态识别与骨骼特效渲染，全部跑在手机端 Termux。</p>
+      <div class="meta"><i>FFmpeg</i><i>onnxruntime</i><i>Python</i></div>
+    </div>
+    <div class="card">
+      <span class="tag">INFRA</span>
+      <h3>GitHub Releases 图床</h3>
+      <p>把 GitHub Releases 当免费媒体托管用：上传、生成加速直链、批量管理，替代付费图床。</p>
+      <div class="meta"><i>GitHub API</i><i>REST</i></div>
+    </div>
+    <div class="card">
+      <span class="tag">VISUALIZATION</span>
+      <h3>多屏数据可视化大屏</h3>
+      <p>4K / 多联屏数据墙：Vue + Vite 组件化大屏，支持多屏拼接、滚动轮播与后台内容管理。</p>
+      <div class="meta"><i>Vue</i><i>Vite</i><i>CSS</i></div>
+    </div>
+  </div>
+
+  <h2><span>STACK</span>常用技术</h2>
+  <ul class="skills">
+    <li>语言：Python · TypeScript · Bash</li>
+    <li>移动端：React Native · Expo · Android</li>
+    <li>后端：Supabase · Cloudflare Workers · D1</li>
+    <li>前端：Vue · Vite · 原生 HTML/CSS</li>
+    <li>媒体：FFmpeg · ONNX Runtime</li>
+    <li>工具：Git · GitHub Actions · Docker</li>
+  </ul>
+
+  <h2><span>CONTACT</span>联系</h2>
+  <div class="contact">
+    <div>
+      <strong>想聊聊自动化或工程实现？</strong>
+      <p style="font-size:14px;color:var(--muted)">欢迎在 GitHub 上找我，开源项目与 issue 都在那边。</p>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn" href="https://github.com/GACN">GitHub 主页</a>
+      <a class="btn alt" href="https://github.com/GACN?tab=repositories">查看仓库</a>
+    </div>
+  </div>
+</main>
+
+<footer>© 2026 GACN · 本页托管于 GitHub Pages · 非商业用途</footer>
+</body>
+</html>
