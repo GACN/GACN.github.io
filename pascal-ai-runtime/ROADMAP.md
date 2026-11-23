@@ -45,3 +45,22 @@
 INT8 QKV 的39帧测试观察到约10%的端到端耗时改善，但 PSNR 33.55 dB、SSIM 0.9527，未通过预设画质门槛。因此不能宣称它已经成为可替代原始路径的优化版本。
 
 研究暂停，不代表实验失败。保留报告和代码分支，供以后复现。
+
+
+## 卸载前先保存研究记录
+
+本次审计报告和实验目录位于 ComfyUI 目录下。直接删除 C:\ComfyUI 可能同时删除研究资料。
+
+建议先将以下小体积资料复制到 ComfyUI 目录之外，例如 D:\Pascal-AI-Archive\：
+
+- C:\ComfyUI\lab\audit\
+- C:\ComfyUI\lab\experiments\freevideo_int8\
+- C:\ComfyUI\README-使用说明.md
+- models_sha256.csv（如果存在）
+- prefetch_tests.csv、gpu_walkC.csv、sys_walkC.csv（如果存在）
+- capture_run.log、run2、run3 等捕获日志
+- 一份代表性的 10 秒输出视频和对应 engine.json / request.json
+
+不必为了保留研究记录而备份全部几十 GB 模型权重；可先保留模型名称、版本、SHA256 和配置。
+
+本次对话没有远程执行卸载，也没有删除本机文件。卸载前应确认备份已完成，再自行删除 ComfyUI 程序目录、虚拟环境和不再需要的缓存。不要误删其他项目共用的 Python 环境或模型目录。
